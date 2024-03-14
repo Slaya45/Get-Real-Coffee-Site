@@ -1,88 +1,122 @@
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #292b2c;
-    color: #ffffff;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 80px; /* Adjust the height of your logo as needed */
-    padding-left: 15px;
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s; /* Add smooth transition for color change */
-  }
-  
-  nav a:hover {
-    color: #e44d26; /* Change the color on hover */
-  }
-  
-  #menu {
-    text-align: center;
-    padding: 80px 0;
-  }
-  
-  .menu-item h3 {
-    text-align: right;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+header {
+  background-color: #292b2c;
+  color: #ffffff;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px; /* Adjust the height of your logo as needed */
+  padding-left: 15px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 15px; /* Added margin to align menu items properly */
+}
+
+nav ul li {
+  margin-right: 10px; /* Reduced margin for better spacing */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s; /* Add smooth transition for color change */
+}
+
+nav a:hover {
+  color: #e44d26; /* Change the color on hover */
+}
+
+#menu {
+  text-align: center;
+  padding: 40px 0; /* Adjusted padding for better spacing on mobile */
+}
+
+.menu-item h3 {
+  text-align: right;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu-item h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.menu-item p {
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .logo img {
+      height: 60px; /* Adjust logo height for smaller screens */
   }
-  
+
+  nav ul {
+      margin-right: 0; /* Remove margin for better alignment */
+  }
+
+  nav ul li {
+      margin-right: 15px; /* Adjusted margin for menu items */
+  }
+  nav a {
+    font-size: 10px;
+  }
+
   .menu-item {
-    text-align: left;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s;
+      margin: 10px; /* Adjusted margin for menu items */
+      padding: 8px; /* Adjusted padding for menu items */
   }
-  
-  .menu-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .menu-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .menu-item h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .menu-item p {
-    color: #555555;
-    margin-bottom: 20px;
-  }
-  footer{
-    text-align: center;
-   }
+
+  .menu-grid {
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+        gap: 15px; /* Adjusted gap for smaller screens */
+}
+
+#menu {
+        padding: 30px 0; /* Adjusted padding for menu section */
+}
+}
