@@ -112,11 +112,11 @@ footer {
   }
 
   .menu-grid {
-       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid columns */
         gap: 15px; /* Adjusted gap for smaller screens */
 }
 
 #menu {
-        padding: 30px 0; /* Adjusted padding for menu section */
+        padding: 20px 0; /* Adjusted padding for menu section */
 }
 }
